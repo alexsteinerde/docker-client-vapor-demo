@@ -10,8 +10,7 @@ let package = Package(
     dependencies: [
         // 💧 A server-side Swift web framework.
         .package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"),
-//        .package(url: "https://github.com/alexsteinerde/docker-client-swift.git", .branch("main")),
-        .package(name: "docker-client-swift", path: "/Users/alex/Developer/vapor4-beta/docker-client-swift"),
+        .package(url: "https://github.com/alexsteinerde/docker-client-swift.git", .branch("main")),
     ],
     targets: [
         .target(
