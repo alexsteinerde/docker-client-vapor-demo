@@ -14,15 +14,15 @@ func routes(_ app: Application) throws {
                 DeployResponse(success: true, imageDigest: service.image.digest?.rawValue)
             })
     }
-    
-    struct DeployRequest: Content {
-        let serviceName: String
-        let imageName: String
-        let imageTag: String?
-    }
-    
-    struct DeployResponse: Content {
-        let success: Bool
-        let imageDigest: String?
-    }
+}
+
+struct DeployRequest: Content {
+    let serviceName: String
+    let imageName: String
+    let imageTag: String?
+}
+
+struct DeployResponse: Content {
+    let success: Bool
+    let imageDigest: String?
 }
